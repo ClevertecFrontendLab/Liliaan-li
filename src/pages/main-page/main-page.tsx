@@ -10,19 +10,18 @@ import {
     TrophyFilled,
 } from '@ant-design/icons';
 import { IconFont } from '@constants/icon-font/icon-font.ts';
-import { LogoShort } from '../../../../../Liliaan-li/src/assets/logo/logo_short.tsx';
-import { Logo } from '../../../../../Liliaan-li/src/assets/logo/logo.tsx';
 import { ContentPartMainPage } from '@layouts/for-main-page/contentpart-main-page/contentpart-main-page.tsx';
 import { FooterMainPage } from '@layouts/for-main-page/footer-main-page/footer-main-page.tsx';
 import { HeaderMainPage } from '@layouts/for-main-page/header-main-page/header-main-page.tsx';
 import { Typography } from '@components/typography/typography.tsx';
 import { useWindowSize } from '@hooks/window-size/use-window-size.ts';
+import {Logo} from "@assets/logo/logo.tsx";
+import {LogoShort} from "@assets/logo/logo_short.tsx";
 
 const { Header, Sider, Content } = Layout;
 export const MainPage: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);
     const windowSize = useWindowSize();
-    console.log(windowSize);
     return (
         <Layout className={s.mainPage_layout}>
             <Sider
