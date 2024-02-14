@@ -1,0 +1,47 @@
+@mixin typography($fontSize, $fontWeight) {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: 130%;
+}
+
+.h1 {
+    @include typography(var(--font-size-38), var(--font-weight-bold));
+}
+
+.h2 {
+    @include typography(var(--font-size-32), var(--font-weight-medium));
+}
+
+.h3 {
+    @include typography(var(--font-size-24), var(--font-weight-medium));
+}
+.h4 {
+    @include typography(var(--font-size-20), var(--font-weight-medium));
+}
+.h5Medium {
+    @include typography(var(--font-size-16), var(--font-weight-medium));
+}
+.h5Bold {
+    @include typography(var(--font-size-16), var(--font-weight-bold));
+}
+.h6 {
+    @include typography(var(--font-size-16), var(--font-weight-regular));
+}
+
+.regularBody {
+    @include typography(var(--font-size-14), var(--font-weight-regular));
+}
+
+.mediumBody {
+    @include typography(var(--font-size-14), var(--font-weight-medium));
+}
+
+.strongBody {
+    @include typography(var(--font-size-14), var(--font-weight-bold));
+}
+
+.strFootNote {
+    @include typography(var(--font-size-12), var(--font-weight-regular));
+}
